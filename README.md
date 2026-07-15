@@ -2,18 +2,18 @@
 
 An interactive **Sorting Algorithm Visualizer** built with **Python** and **Pygame** to demonstrate how different sorting algorithms work through real-time animations.
 
-The application allows users to generate random datasets, switch between multiple sorting algorithms, choose ascending or descending order, and observe the internal operations of each algorithm step by step.
+The application allows users to generate random datasets, switch between multiple sorting algorithms, choose ascending or descending order, and observe each algorithm's execution step by step.
 
 ---
 
 ## ✨ Features
 
-- 🎲 Generate a new random dataset
+- 🎲 Generate random datasets
 - 📈 Sort in **Ascending** or **Descending** order
 - ⚡ Real-time visualization of sorting operations
-- 🎨 Color-coded comparisons, swaps, and sorted elements
-- ⌨️ Keyboard shortcuts for quick interaction
-- 🏗️ Modular project structure with each algorithm implemented separately
+- 🎨 Color-coded comparisons, swaps, heap operations, and sorted elements
+- ⌨️ Keyboard shortcuts for selecting algorithms
+- 🏗️ Modular project structure with each algorithm implemented in a separate file
 
 ---
 
@@ -32,13 +32,13 @@ The application allows users to generate random datasets, switch between multipl
 ## 📁 Project Structure
 
 ```text
-sorting_visualizer/
+sorting-algorithm-visualizer/
 │
 ├── main.py                 # Main application loop
 ├── draw.py                 # Drawing utilities and visualization
 ├── utils.py                # Helper functions
 │
-├── Algorithms/
+├── algorithms/
 │   ├── __init__.py
 │   ├── bubble_sort.py
 │   ├── insertion_sort.py
@@ -49,6 +49,7 @@ sorting_visualizer/
 │   └── bucket_sort.py
 │
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -57,8 +58,8 @@ sorting_visualizer/
 ## 🎮 Controls
 
 | Key | Action |
-|-----|--------|
-| **R** | Generate a new random list |
+|------|--------|
+| **R** | Generate a new random dataset |
 | **SPACE** | Start sorting |
 | **A** | Sort in Ascending order |
 | **D** | Sort in Descending order |
@@ -68,7 +69,7 @@ sorting_visualizer/
 | **M** | Merge Sort |
 | **Q** | Quick Sort |
 | **H** | Heap Sort |
-| **K** *(or your chosen key)* | Bucket Sort |
+| **K** | Bucket Sort *(or whichever key you've assigned)* |
 
 ---
 
@@ -77,7 +78,7 @@ sorting_visualizer/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/sorting-algorithm-visualizer.git
+git clone https://github.com/jogaraoentenuka/sorting-algorithm-visualizer.git
 cd sorting-algorithm-visualizer
 ```
 
@@ -122,10 +123,10 @@ python main.py
 
 ---
 
-## 📚 Algorithms Covered
+## 📚 Time Complexity
 
 | Algorithm | Best | Average | Worst | Space |
-|----------|------:|--------:|------:|------:|
+|-----------|------|----------|--------|-------|
 | Bubble Sort | O(n) | O(n²) | O(n²) | O(1) |
 | Insertion Sort | O(n) | O(n²) | O(n²) | O(1) |
 | Selection Sort | O(n²) | O(n²) | O(n²) | O(1) |
@@ -145,18 +146,23 @@ python main.py
 - Adjustable dataset size
 - Pause and resume animation
 - Display real-time statistics (comparisons and swaps)
-- Sound effects during sorting
+- Add sound effects during sorting
+- Display execution time for each algorithm
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
+This project is currently available for educational and personal use.
+
+*(If you add an MIT `LICENSE` file later, replace this section with "This project is licensed under the MIT License.")*
 
 ---
 
 ## 👤 Author
 
-**Joy**
+**Joy (Jogarao Entenuka)**
 
-If you found this project useful or interesting, feel free to ⭐ the repository!
+GitHub: **https://github.com/jogaraoentenuka**
+
+If you found this project helpful, consider giving the repository a ⭐!
