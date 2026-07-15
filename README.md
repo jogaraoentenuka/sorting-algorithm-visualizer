@@ -155,8 +155,6 @@ python main.py
 
 This project is currently available for educational and personal use.
 
-*(If you add an MIT `LICENSE` file later, replace this section with "This project is licensed under the MIT License.")*
-
 ---
 
 ## 👤 Author
