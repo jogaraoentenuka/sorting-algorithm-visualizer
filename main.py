@@ -1,7 +1,7 @@
 import pygame
 
 from draw import DrawInformation, draw, draw_list
-from Algorithms import bubble_sort, insertion_sort, selection_sort, merge_sort, quick_sort, heap_sort
+from Algorithms import bubble_sort, insertion_sort, selection_sort, merge_sort, quick_sort, heap_sort, bucket_sort
 from utils import generate_starting_list
 
 def main():
@@ -63,6 +63,9 @@ def main():
             elif event.key == pygame.K_q and not sorting:
                 sorting_algorithm = quick_sort
                 sorting_algo_name = "Quick Sort"
+            elif event.key == pygame.K_k and not sorting:
+                sorting_algorithm = bucket_sort
+                sorting_algo_name = "Bucket Sort"
             elif event.key == pygame.K_SPACE and sorting == False:
                 sorting = True
                 sorting_algo_generator = sorting_algorithm(draw_info, draw_list, ascending)

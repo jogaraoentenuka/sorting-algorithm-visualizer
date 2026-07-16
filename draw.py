@@ -52,7 +52,7 @@ def draw(draw_info, algo_name, ascending):
     controls = draw_info.FONT.render("R - Reset | SPACE - Start Sorting | A - Ascending Order | D - Descending Order", True, draw_info.BLACK)
     draw_info.window.blit(controls, (draw_info.width / 2 - controls.get_width() / 2, 50))
 
-    sorting_algos = draw_info.FONT.render("B - Bubble | I - Insertion | S - Selection | M - Merge | Q - Quick | H - Heap", True, draw_info.BLACK)
+    sorting_algos = draw_info.FONT.render("B - Bubble | I - Insertion | S - Selection | M - Merge | Q - Quick | H - Heap | K - Bucket", True, draw_info.BLACK)
     draw_info.window.blit(sorting_algos, (draw_info.width / 2 - sorting_algos.get_width() / 2, 70))
     
     draw_list(draw_info)
